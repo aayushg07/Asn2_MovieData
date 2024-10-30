@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Movie ID</th>
+                <th>Poster</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Plot</th>
+                <th>Language</th>
+                <th>Country</th>
+                <th>Awards</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each movies}}
+            <tr>
+                <td>{{this.Movie_ID}}</td>
+                <td>{{this.Poster}}</td>
+                <td>{{this.Title}}</td>
+                <td>{{this.Year}}</td>
+                <td>{{this.Genre}}</td>
+                <td>{{this.Plot}}</td>
+                <td>{{this.Language}}</td>
+                <td>{{this.Country}}</td>
+                <td>{{this.Awards}}</td>
+                <td>{{#ifNotEmpty this.Website}}<a href="{{this.Website}}">Link</a>{{else}}N/A{{/ifNotEmpty}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <a href="/">Go back to Home</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies List</title>
+</head>
+<body>
+    <h1>Movies Found:</h1>
+    {{#each movies}}
+        <div>
+            <p><strong>Movie ID:</strong> {{this.Movie_ID}}</p>
+            <p><strong>Title:</strong> {{this.Title}}</p>
+            <p><strong>Year:</strong> {{this.Year}}</p>
+            <p><strong>Genre:</strong> {{this.Genre}}</p>
+            <p><strong>Plot:</strong> {{this.Plot}}</p>
+            <p><strong>Language:</strong> {{this.Language}}</p>
+            <p><strong>Country:</strong> {{this.Country}}</p>
+            <p><strong>Awards:</strong> {{this.Awards}}</p>
+            <p><strong>Poster: </strong>{{this.Poster}}</p>
+            <hr>
+        </div>
+    {{/each}}
+
+</body>
+ <a class="back-home" href="/">Go back to Home</a>
+</html>

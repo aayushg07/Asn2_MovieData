@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        .highlight {
+            background-color: #f9aeae; 
+        }
+    </style>
+</head>
+<body>
+    <h1>{{title}}</h1>
+      <a class="back-home" href="/">Go back to Home</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Movie ID</th>
+                <th>Poster</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Plot</th>
+                <th>Language</th>
+                <th>Country</th>
+                <th>Awards</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each movies}}
+            <tr class="{{#if (isBlankOrNA this.Website)}}highlight{{/if}}">
+                <td>{{this.Movie_ID}}</td>
+                <td>
+                    {{#if this.Poster}}
+                        <img src="{{this.Poster}}" alt="{{this.Title}} Poster" style="width: 100px; height: auto;">
+                    {{else}}
+                        <p>No Poster Available</p>
+                    {{/if}}
+                </td>
+                <td>{{this.Title}}</td>
+                <td>{{this.Year}}</td>
+                <td>{{this.Genre}}</td>
+                <td>{{this.Plot}}</td>
+                <td>{{this.Language}}</td>
+                <td>{{this.Country}}</td>
+                <td>{{this.Awards}}</td>
+                <td>{{this.Website}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+   <a class="back-home" href="/">Go back to Home</a>
+</body>
+</html>

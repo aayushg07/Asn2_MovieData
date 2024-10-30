@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="search-page">
+    <h1>Search Movies by Title</h1>
+    <form action="/data/search/title" method="POST" class="search-form">
+        <input type="text" name="movie_title" placeholder="Enter Movie Title" required class="input-field">
+        <button type="submit" class="search-button">Search</button>
+         <a class="back-home" href="/">Go back to Home</a>
+    </form>
+</body>
+</html>
