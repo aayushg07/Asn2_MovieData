@@ -25,6 +25,7 @@ const app = express();// Create an instance of an Express application
 //Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
+app.set('views',path.join(__dirname,'/views'));
 
 // Register a custom Handlebars helper
 app.engine("hbs", engine({
