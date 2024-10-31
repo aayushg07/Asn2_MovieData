@@ -1,17 +1,24 @@
-{
-  "name": "asn2_aayushgautam",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.21.1",
-    "express-handlebars": "^8.0.1"
+
+  {
+    "name": "asn2_aayushgautam",
+    "version": "1.0.0",
+    "description": "This was created as part of YouTube Video. Links below",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "ejs": "^3.1.6",
+      "express": "^4.17.1",
+      "express-handlebars": "^7.1.2",
+      "express-validator": "^6.10.0",
+      "nodemon": "^2.0.7"
+    },
+    "devDependencies": {},
+    "keywords": []
   }
-}
+  
